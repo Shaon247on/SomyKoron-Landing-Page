@@ -1,8 +1,9 @@
+import Banner from "../Banner/Banner";
 
 const HomePageLayout = () => {
     return (
         <div>
-            Hello world
+            <Banner/>         
         </div>
     );
 };
