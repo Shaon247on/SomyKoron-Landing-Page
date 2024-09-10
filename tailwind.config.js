@@ -8,6 +8,9 @@ export default {
       fontFamily: {
         'lexend': ['"Lexend Deca"', 'sans-serif'], 
       },
+      backgroundImage: {
+        'banner': "url('/src/assets/Images/vector.jpg')",
+      },
     },
   },
   plugins: [require('daisyui')],

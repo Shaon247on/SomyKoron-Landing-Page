@@ -3,7 +3,7 @@ import Banner from "../Banner/Banner";
 const HomePageLayout = () => {
     return (
         <div>
-            <Banner/>         
+            <Banner/>            
         </div>
     );
 };
