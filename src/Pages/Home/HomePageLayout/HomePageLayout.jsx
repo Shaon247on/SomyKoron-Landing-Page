@@ -1,9 +1,13 @@
+import AITools from "../AITools/AITools";
 import Banner from "../Banner/Banner";
+import YouTube from "../YouTube/YouTube";
 
 const HomePageLayout = () => {
     return (
         <div>
-            <Banner/>            
+            <Banner/>  
+            <AITools/>   
+            <YouTube/>       
         </div>
     );
 };

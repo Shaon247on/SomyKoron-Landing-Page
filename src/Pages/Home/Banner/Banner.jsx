@@ -8,15 +8,17 @@ const Banner = () => {
             <div className="h-[100px]"></div>
             <div className="bg-banner bg-cover bg-center pt-16">
 
-                <h1 className="text-[80px] text-center w-[1200px] text-[#d2d5da] font-lexend leading-tight font-semibold mx-auto">Unlock Global Knowledge with Our <br />
-                    <LinearGradient gradient={['to right', '#1fd0b6 ,#0796aa']}>
+                <h1 className="text-[32px] lg:text-[80px] text-center lg:w-[1200px] text-[#d2d5da] font-lexend leading-tight font-semibold mx-auto">Unlock Global Knowledge with Our <br />
+                    <LinearGradient gradient={['to right', '#1fd0b6 ,#0796aa']} className='text-[42px]'>
                         Ai Translation Services
                     </LinearGradient>
                 </h1>
-                <p className='text-center text-xl mt-4'>Accuracy of translation is 90%+ on most languages. Professional dubbing and subtitle creation</p>
+                <p className='text-center text-base lg:text-xl mt-4 px-10 lg:px-0'>Accuracy of translation is 90%+ on most languages. Professional dubbing and subtitle creation</p>
             </div>
             <img src={bannerImage} alt="" className='w-full mt-14 px-6' />
-            <Button text={'Try it for free'}/>
+            <div className='my-9 text-center'>
+                <Button text={'Try it for free'} />
+            </div>
 
         </div>
     );
