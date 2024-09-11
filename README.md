@@ -1,5 +1,5 @@
 
-![Realty Nest](https://i.ibb.co.com/D1qMkXQ/Job-Task-Somy-Koron.png)
+![Mona AI](https://i.ibb.co.com/D1qMkXQ/Job-Task-Somy-Koron.png)
 
 
 Live Site Link: https://landing-page-somykorom-job-task.surge.sh
