@@ -5,8 +5,12 @@ import { RiMenu5Line } from "react-icons/ri";
 import logo from "../../assets/Images/footer-logo.png"
 import { SiGoogletranslate } from "react-icons/si";
 import { useState } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 
-const NonStickNavBar = () => {
+const NavForLargeDevice = () => {
+
     const [toggle, setToggle] = useState(false)
     console.log(toggle);
     const navLinks =
@@ -29,8 +33,16 @@ const NonStickNavBar = () => {
             <Link><li className="text-xl ml-8 font-medium hover:text-white">Contact Us</li></Link>
         </>
     return (
-        <div className="grid grid-cols-1 lg:grid-cols-12 justify-between items-center w-full h-[80px] lg:h-[100px] bg-transparent">
-                <div className="col-span-1 lg:col-span-2 flex-1 flex flex-row-reverse lg:flex-row justify-between items-center">                    
+        <>
+            <div
+                data-aos="fade-down"
+                data-aos-delay="50"
+                data-aos-duration="500"
+                data-aos-easing="ease-in-out"
+                data-aos-anchor="#navAnchor"
+
+                className="nav_bar grid grid-cols-1 lg:grid-cols-12 justify-between items-center z-[5] w-full h-[80px] lg:h-[100px]">
+                <div className="col-span-1 lg:col-span-2 flex-1 flex flex-row-reverse lg:flex-row justify-between items-center">
                     <button onClick={() => setToggle(true)} className="mr-4 text-2xl block lg:hidden"><RiMenu5Line /></button>
                     <div className={` absolute top-[0px] w-full animate__animated my-element block lg:hidden bg-[#121a2b] ${toggle ? 'animate__slideInLeft' : "animate__slideOutLeft"} overflow-y-scroll pb-8 h-[100vh]`} >
                         <div className="flex justify-between items-start">
@@ -92,7 +104,9 @@ const NonStickNavBar = () => {
                     <button className="px-6 py-3 border-2 border-[#2d9f89] text-[#2d9f89] rounded-md text-xl">Sign Up</button>
                 </div>
             </div>
+            <div id="navAnchor" className="absolute right-0 bottom-[0%]"></div>
+        </>
     );
 };
 
-export default NonStickNavBar;
+export default NavForLargeDevice;
