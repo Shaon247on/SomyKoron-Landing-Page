@@ -26,7 +26,7 @@ const NavBar = () => {
         </>
     return (
         <>
-            <div className="nav_bar grid grid-cols-12 justify-between items-center">
+            <div className="nav_bar grid grid-cols-12 justify-between items-center z-[2]">
                 <div className="col-span-6 lg:col-span-2 flex-1 lg:flex">
                     <div className="dropdown">
                         <div className="drawer lg:hidden">

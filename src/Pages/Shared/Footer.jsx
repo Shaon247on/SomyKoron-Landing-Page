@@ -15,7 +15,7 @@ const Footer = () => {
                     </p>
                 </aside>
                 <nav className='pt-24'>
-                    <h6 className="text-2xl font-semibold text-white">Quick Links</h6>
+                    <h6 className="text-2xl font-semibold text-white footer-title">Quick Links</h6>
                     <a className="  text-[#80838a] text-lg font-medium">Home</a>
                     <a className="  text-[#80838a] text-lg font-medium">About Us</a>
                     <a className="  text-[#80838a] text-lg font-medium">Pricing</a>
@@ -24,7 +24,7 @@ const Footer = () => {
                     <a className="  text-[#80838a] text-lg font-medium">Terms and Policy</a>
                 </nav>
                 <nav className='pt-24'>
-                    <h6 className="text-2xl font-semibold text-white">Tools</h6>
+                    <h6 className="text-2xl font-semibold text-white footer-title">Tools</h6>
                     <a className="  text-[#80838a] text-lg font-medium">AI Video Subtitles</a>
                     <a className="  text-[#80838a] text-lg font-medium">YouTube Translation</a>
                     <a className="  text-[#80838a] text-lg font-medium">YouTube Watch</a>
@@ -32,7 +32,7 @@ const Footer = () => {
                     <a className="  text-[#80838a] text-lg font-medium">AI Assistant</a>
                 </nav>
                 <nav className='pt-24'>
-                    <h6 className="text-2xl font-semibold text-white">Get in touch</h6>
+                    <h6 className="text-2xl font-semibold text-white footer-title">Get in touch</h6>
                     <a className="  flex items-center text-[#80838a] text-lg font-medium gap-4"><FaMapMarkerAlt className='text-2xl' /> Times Square Office Building</a>
                     <a className="  flex items-center text-[#80838a] text-lg font-medium gap-4"><HiMail className='text-2xl' />info@mona-ai.mn
                     </a>

@@ -1,0 +1,20 @@
+.swiper-pagination {
+    position: absolute; /* Customize the position */
+    bottom: 0px;       /* Move it up or down */
+    text-align: center;
+  }
+
+
+.swiper-pagination-bullet {
+    background-color: #757474; /* Default bullet color */
+    width: 14px;
+    height: 14px;
+    opacity: 0.6;              /* Make bullets semi-transparent */
+    border-radius: 50%;        /* Round bullets */
+    margin: 0 8px;             /* Spacing between bullets */
+    transition: background-color 0.3s ease; /* Smooth transition */
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: #54c5ae;
+  }

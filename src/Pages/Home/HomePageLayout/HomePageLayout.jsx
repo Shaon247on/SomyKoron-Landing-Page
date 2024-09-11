@@ -1,5 +1,6 @@
 import AITools from "../AITools/AITools";
 import Banner from "../Banner/Banner";
+import Face from "../Faces/Face";
 import Services from "../Services/Services";
 import YouTube from "../YouTube/YouTube";
 
@@ -9,7 +10,8 @@ const HomePageLayout = () => {
             <Banner/>  
             <AITools/>
             <Services/>   
-            <YouTube/>       
+            <YouTube/> 
+            <Face/>      
         </div>
     );
 };
