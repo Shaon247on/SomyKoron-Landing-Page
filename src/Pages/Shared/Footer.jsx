@@ -1,5 +1,5 @@
 import Logo from '../../assets/Images/footer-logo.png';
-import brands from '../../assets/Images/card.png';
+import brands from '../../assets/Images/card.png'
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { HiMail } from "react-icons/hi";
 import { IoCall } from "react-icons/io5";
@@ -7,14 +7,14 @@ import { IoCall } from "react-icons/io5";
 const Footer = () => {
     return (
         <>
-            <footer className="footer bg-[#000614] text-base-content h-[436px] mt-16">
-                <aside className='bg-gradient-to-r from-[#091c22] to-[#000614] pl-5 pt-24 h-full'>
-                    <img src={Logo} alt="" />
-                    <p className='w-[384px] text-base text-white'>
+            <footer className="footer  bg-[#000614] text-base-content mt-4 md:mt-16 pb-3">
+                <aside className='bg-gradient-to-r from-[#091c22] to-[#000614] pl-5 pt-10 md:pt-24 h-full'>
+                    <img src={Logo} alt="" className='w-[320px] md:w-auto'/>
+                    <p className='lg:w-[384px] mr-4 md:mr-0 text-base text-white'>
                         We harness the power of artificial intelligence to break down language barriers, making worldwide information and educational content accessible to all Mongolians. Our suite of AI-powered tools is designed to empower Mongolian learners, researchers, and curious minds, opening doors to a world of knowledge previously hindered by language constraints.
                     </p>
                 </aside>
-                <nav className='pt-24'>
+                <nav className='md:pt-24 ml-4 md:ml-0'>
                     <h6 className="text-2xl font-semibold text-white footer-title">Quick Links</h6>
                     <a className="  text-[#80838a] text-lg font-medium">Home</a>
                     <a className="  text-[#80838a] text-lg font-medium">About Us</a>
@@ -23,7 +23,7 @@ const Footer = () => {
                     <a className="  text-[#80838a] text-lg font-medium">Contact</a>
                     <a className="  text-[#80838a] text-lg font-medium">Terms and Policy</a>
                 </nav>
-                <nav className='pt-24'>
+                <nav className='md:pt-24 ml-4 md:ml-0'>
                     <h6 className="text-2xl font-semibold text-white footer-title">Tools</h6>
                     <a className="  text-[#80838a] text-lg font-medium">AI Video Subtitles</a>
                     <a className="  text-[#80838a] text-lg font-medium">YouTube Translation</a>
@@ -31,8 +31,8 @@ const Footer = () => {
                     <a className="  text-[#80838a] text-lg font-medium">Image Generation</a>
                     <a className="  text-[#80838a] text-lg font-medium">AI Assistant</a>
                 </nav>
-                <nav className='pt-24'>
-                    <h6 className="text-2xl font-semibold text-white footer-title">Get in touch</h6>
+                <nav className='md:pt-24 ml-4 md:ml-0'>
+                    <h6 className="text-2xl font-semibold text-white ">Get in touch</h6>
                     <a className="  flex items-center text-[#80838a] text-lg font-medium gap-4"><FaMapMarkerAlt className='text-2xl' /> Times Square Office Building</a>
                     <a className="  flex items-center text-[#80838a] text-lg font-medium gap-4"><HiMail className='text-2xl' />info@mona-ai.mn
                     </a>

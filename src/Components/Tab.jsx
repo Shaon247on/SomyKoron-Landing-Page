@@ -5,20 +5,52 @@ import tab2 from '../assets/Images/tab-1.png';
 import tab3 from '../assets/Images/video.png';
 import tab4 from '../assets/Images/image.png';
 import tab5 from '../assets/Images/assistant.png';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/swiper-bundle.css';
 
 const Tab = () => {
     const [toggle, setToggle] = useState(1)
     console.log(toggle);
 
     return (
-        <div role="tablist" className="w-full mt-10 pt-6 text-center">
-            <div className="flex items-center justify-center gap-3 mb-10 mx-5">
-                <button onClick={() => setToggle(1)} role="tab" className={`w-[255px] text-center py-4 text-xl font-semibold  rounded-lg hover:bg-[#2d9f89] ${toggle === 1 ? "text-white" : "text-[#a1a3ab]"} hover:text-white ${toggle === 1 ? "bg-[#2d9f89]" : "bg-[#0a101f]"}`}>Chatroom</button>
-                <button onClick={() => setToggle(2)} role="tab" className={`w-[255px] text-center py-4 text-xl font-semibold  rounded-lg hover:bg-[#2d9f89] ${toggle === 2 ? "text-white" : "text-[#a1a3ab]"} hover:text-white ${toggle === 2 ? "bg-[#2d9f89]" : "bg-[#0a101f]"}`}>Youtube Translation</button>
-                <button onClick={() => setToggle(3)} role="tab" className={`w-[255px] text-center py-4 text-xl font-semibold  rounded-lg hover:bg-[#2d9f89] ${toggle === 3 ? "text-white" : "text-[#a1a3ab]"} hover:text-white ${toggle === 3 ? "bg-[#2d9f89]" : "bg-[#0a101f]"}`}>AI Video Subtitles</button>
-                <button onClick={() => setToggle(4)} role="tab" className={`w-[255px] text-center py-4 text-xl font-semibold  rounded-lg hover:bg-[#2d9f89] ${toggle === 4 ? "text-white" : "text-[#a1a3ab]"} hover:text-white ${toggle === 4 ? "bg-[#2d9f89]" : "bg-[#0a101f]"}`}>Images Generation</button>
-                <button onClick={() => setToggle(5)} role="tab" className={`w-[255px] text-center py-4 text-xl font-semibold  rounded-lg hover:bg-[#2d9f89] ${toggle === 5 ? "text-white" : "text-[#a1a3ab]"} hover:text-white ${toggle === 5 ? "bg-[#2d9f89]" : "bg-[#0a101f]"}`}>AI Assistant</button>
-            </div>
+        <div role="tablist" className=" md:mx-5 mt-10 pt-6 text-center h-[1100px] md:h-[1250px] lg:h-[950px]">
+            <Swiper
+             breakpoints={{
+                // When window width is >= 640px (small devices)
+                300: {
+                  slidesPerView: 2,
+                },
+                // When window width is >= 768px (medium devices)
+                768: {
+                  slidesPerView: 4,
+                },
+                // When window width is >= 1024px (large devices)
+                1024: {
+                  slidesPerView: 5,
+                },
+              }}
+                spaceBetween={0}
+                slidesPerView={'auto'}
+                centeredSlides={false}
+                grabCursor={true}
+                className="w-full"
+            >
+                <SwiperSlide className="">
+                    <button onClick={() => setToggle(1)} className={`w-[170px] md:w-[170px] lg:w-[255px] text-center py-4 text-base lg:text-xl font-semibold rounded-lg hover:bg-[#2d9f89] ${toggle === 1 ? "text-white" : "text-[#a1a3ab]"} hover:text-white ${toggle === 1 ? "bg-[#2d9f89]" : "bg-[#0a101f]"}`}>Chatroom</button>
+                </SwiperSlide>
+                <SwiperSlide className="">
+                    <button onClick={() => setToggle(2)} className={`w-[170px] md:w-[170px] lg:w-[255px] text-center py-4 text-base lg:text-xl font-semibold rounded-lg hover:bg-[#2d9f89] ${toggle === 2 ? "text-white" : "text-[#a1a3ab]"} hover:text-white ${toggle === 2 ? "bg-[#2d9f89]" : "bg-[#0a101f]"}`}>Youtube Translation</button>
+                </SwiperSlide>
+                <SwiperSlide className="">
+                    <button onClick={() => setToggle(3)} className={`w-[170px] md:w-[170px] lg:w-[255px] text-center py-4 text-base lg:text-xl font-semibold rounded-lg hover:bg-[#2d9f89] ${toggle === 3 ? "text-white" : "text-[#a1a3ab]"} hover:text-white ${toggle === 3 ? "bg-[#2d9f89]" : "bg-[#0a101f]"}`}>AI Video Subtitles</button>
+                </SwiperSlide>
+                <SwiperSlide className="">
+                    <button onClick={() => setToggle(4)} className={`w-[170px] md:w-[170px] lg:w-[255px] text-center py-4 text-base lg:text-xl font-semibold rounded-lg hover:bg-[#2d9f89] ${toggle === 4 ? "text-white" : "text-[#a1a3ab]"} hover:text-white ${toggle === 4 ? "bg-[#2d9f89]" : "bg-[#0a101f]"}`}>Images Generation</button>
+                </SwiperSlide>
+                <SwiperSlide className="mr-4">
+                    <button onClick={() => setToggle(5)} className={`w-[170px] md:w-[170px] lg:w-[255px] text-center py-4 text-base lg:text-xl font-semibold rounded-lg hover:bg-[#2d9f89] ${toggle === 5 ? "text-white" : "text-[#a1a3ab]"} hover:text-white ${toggle === 5 ? "bg-[#2d9f89]" : "bg-[#0a101f]"}`}>AI Assistant</button>
+                </SwiperSlide>
+            </Swiper>
 
             <div className="mb-48 mt-20">
                 <div className={`${toggle !== 1 ? "hidden" : "block"} h-[500px] w-full text-center font-semibold text-2xl  `}>

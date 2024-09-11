@@ -26,9 +26,9 @@ const NavBar = () => {
         </>
     return (
         <>
-            <div className="nav_bar grid grid-cols-12 justify-between items-center z-[2]">
-                <div className="col-span-6 lg:col-span-2 flex-1 lg:flex">
-                    <div className="dropdown">
+            <div className="nav_bar grid grid-cols-1 lg:grid-cols-12 justify-between items-center z-[5] w-[770px] lg:w-full">
+                <div className="col-span-1 lg:col-span-2 flex-1 flex flex-row-reverse lg:flex-row justify-between items-center">
+                    <div className="dropdown block lg:hidden me-4 md:mr-8">
                         <div className="drawer lg:hidden">
                             <input id="my-drawer" type="checkbox" className="drawer-toggle" />
                             <div className="drawer-content">

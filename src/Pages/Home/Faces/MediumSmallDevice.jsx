@@ -19,7 +19,7 @@ import image8 from '../../../assets/Images/rec-8.jpg';
 const MediumSmallDevice = () => {
 
     return (
-        <div className='mt-10'>
+        <div className='mt-10 block lg:hidden'>
             <Swiper
                 breakpoints={{
                     340: {

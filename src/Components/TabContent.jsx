@@ -2,16 +2,16 @@ import { BsStars } from "react-icons/bs";
 import Button from "./Button";
 const TabContent = ({title, subTitle, feature1, feature2, image}) => {
     return (
-        <div className="flex items-start justify-end gap-14">
-            <div className="ml-52 text-start w-[700px]">
-                <h1 className="text-[40px] font-semibold text-white font-lexend w-[85%] leading-relaxed">{title}</h1>
-                <p className="text-xl font-normal w-[80%] mt-5 mb-8">{subTitle}</p>
-                <p className="flex gap-3 w-[80%] text-lg text-white font-normal"><BsStars className="text-[#2d9f89] text-4xl mb-10"/> {feature1}</p>
-                <p className="flex gap-3 w-[80%] text-lg text-white font-normal"><BsStars className="text-[#2d9f89] text-4xl mb-20"/> {feature2}</p>
-                <Button text={'Try it for free'} />
+        <div className="flex flex-col-reverse lg:flex-row items-start justify-end gap-14 ml-4">
+            <div className="lg:ml-52 text-start md:w-[700px]">
+                <h1 className="text-[24px] lg:text-[40px] font-semibold text-white font-lexend w-[85%] leading-relaxed">{title}</h1>
+                <p className="text-lg md:text-xl font-normal w-[300px] md:w-[80%] mt-5 mb-8">{subTitle}</p>
+                <p className="flex gap-3 w-[300px] md:w-[80%] text-base md:text-lg text-white font-normal"><BsStars className="text-[#2d9f89] text-4xl mb-10"/> {feature1}</p>
+                <p className="flex gap-3 w-[300px] md:w-[80%] text-base md:text-lg text-white font-normal"><BsStars className="text-[#2d9f89] text-4xl mb-20"/> {feature2}</p>
+                <Button text={'Try it for free'} extraClass={'md:w-[240px]'}/>
             </div>
-            <div>
-                <img src={image} alt="" />
+            <div className="w-[95%]">
+                <img src={image} alt="" className="object-cover object-center"/>
             </div>
         </div>
     );
