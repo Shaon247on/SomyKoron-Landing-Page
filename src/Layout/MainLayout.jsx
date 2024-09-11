@@ -4,7 +4,7 @@ import Footer from "../Pages/Shared/Footer";
 
 const MainLayout = () => {
     return (
-        <div className="scrollable-container">
+        <div>
             <NavBar/>
             <Outlet/>
             <Footer/>

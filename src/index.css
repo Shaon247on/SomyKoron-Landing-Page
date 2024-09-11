@@ -7,3 +7,7 @@ body{
   background-color: #121a2b;
   color: #a1a3ab;
 }
+
+.my-element {
+  --animate-duration: 0.2s;
+}
