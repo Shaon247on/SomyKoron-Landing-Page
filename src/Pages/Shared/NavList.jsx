@@ -1,10 +1,8 @@
 import { Link } from "react-router-dom";
-import NavForLargeDevice from "./NavForLargeDevice";
 
 
-const NavBar = () => {  
-    
-    const navLinks =
+const NavList = () => {
+    return (
         <>
             <Link to='/'><li className="text-xl ml-10 font-medium hover:text-white">Home</li></Link>
             <li>
@@ -23,11 +21,7 @@ const NavBar = () => {
             <Link><li className="text-xl ml-8 font-medium hover:text-white">FAQ</li></Link>
             <Link><li className="text-xl ml-8 font-medium hover:text-white">Contact Us</li></Link>
         </>
-    return (
-        <> 
-            <NavForLargeDevice navLinks={navLinks}/>           
-        </>
     );
 };
 
-export default NavBar;
+export default NavList;

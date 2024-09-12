@@ -5,7 +5,7 @@ import 'swiper/css/navigation'
 import 'swiper/css/free-mode'
 import './Style.css'
 
-import { Pagination, FreeMode, Navigation, Autoplay } from 'swiper/modules';
+import { Pagination, FreeMode, Autoplay } from 'swiper/modules';
 
 import image1 from '../../../assets/Images/rec-1.jpg';
 import image2 from '../../../assets/Images/rec-2.jpg';

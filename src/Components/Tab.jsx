@@ -16,15 +16,15 @@ const Tab = () => {
         <div role="tablist" className=" md:mx-5 mt-10 pt-6 text-center h-[1100px] md:h-[1250px] lg:h-[950px]">
             <Swiper
              breakpoints={{
-                // When window width is >= 640px (small devices)
+                
                 300: {
                   slidesPerView: 2,
                 },
-                // When window width is >= 768px (medium devices)
+              
                 768: {
                   slidesPerView: 4,
                 },
-                // When window width is >= 1024px (large devices)
+              
                 1024: {
                   slidesPerView: 5,
                 },
