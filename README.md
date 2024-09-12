@@ -4,6 +4,8 @@
 
 Live Site Link: https://landing-page-somykorom-job-task.surge.sh
 
+Main Website Link: https://mona-ai.mn
+
 ## 🚀 About Me
 I'm Aminul Islam Shaon, a passionate web developer with a strong foundation in HTML, CSS, Tailwind, Firebase and React.js, and backend technologies like Node.js, MongoDB and Ecpress.js. I have hands-on experience building dynamic and user-friendly web applications, focusing on both frontend and backend development. From creating visually appealing interfaces with Tailwind CSS to ensuring smooth server-side functionality with Express.js, I enjoy every step of the development process.
 
